@@ -1,0 +1,12 @@
+This guide is a self-learning guide made to allow people to learn Python offline.
+This guide is currently targeted at beginners in Python.
+I hope to be able to expand it further, making it a resource to help those who are already proficient even stronger.
+I will only go over what is builtin to Python in this guide. This includes some libraries in python's Standard library 
+
+The style Python is taught here is "learn by doing".
+What that means is, I'll introduce a topic, and then have you do a practice.
+Try not to skip ahead, as you may miss a few key points
+
+The practice will correlate with what I've taught in each lesson.
+The difficulty of each practice may vary for each person.
+Each practice will build on top of previous ones.
