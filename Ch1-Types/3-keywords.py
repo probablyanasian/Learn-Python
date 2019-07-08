@@ -3,7 +3,8 @@
 # However they are reserved to do special functions
 # Here are some keywords
 
-# def ; creates a user defined function
+# def ; defines a user defined function
+
 def funct_a(argument_one):
   if(argument_one):
     return(argument_one)

@@ -16,5 +16,6 @@ A streamlined way of teaching Python 3.x by doing.
 
 - You can help by sharing this, and in doing so, help people learn Python
 
-Discussion server: [Discord](https://discord.gg/vcCEvq)
+Discussion server: [Discord](https://discord.gg/BVRhTNE)
+---
 Brand new server, hopefully people will join
