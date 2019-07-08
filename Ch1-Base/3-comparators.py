@@ -31,4 +31,4 @@ a is c # True
 a is not b # True
 a is not c # False
 
-# Take a look, print() out their values
+# Try it out and take a look, print() out their values

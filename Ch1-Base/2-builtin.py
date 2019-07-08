@@ -14,8 +14,11 @@ user_input = input("Enter something: ")
 print(user_input) # Whatever you inputted
 
 # list(iterable) ; Creates a list, with the iterables given
-a_list = list(['P','y','t','h','o','n'])
+a_list = list('Python')
 print(a_list) # ['P', 'y', 't', 'h', 'o', 'n']
+
+# len(object) ; Returns the length (number of objects) in an object
+len(a_list) # 6
 
 # type(object) ; Returns the type of the object
 print(type(a_list)) # <class 'list'>

@@ -2,7 +2,7 @@
 # Don't be discouraged if you need to look back
 
 #ex. Store the word 'hello' inside of 'world'
-# Replace None, with the right type
+# Replace None with the right value
 world = 'hello'
 
 # Delete the variable 'world'

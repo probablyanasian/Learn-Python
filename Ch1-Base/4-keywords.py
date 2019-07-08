@@ -4,39 +4,24 @@
 # Here are some keywords you will need to know for now.
 
 # def funct(arg1, arg2, ...):  ; defines a user defined function (doesn't require an argument)
-# if (boolean):  ; checks if the argument is True or False, and if True, does the lines that are indented below it.
-# and  ; And gate, requires both sides to be True to return True
-# or  ; Or gate, requires only one side to be True to return True
-# elif (boolean):  ; else if, like "if" but will run only when the "if" statement above it is False
-# else:  ; runs when all the 'elif' and 'if' statements above it fail
+def function():
+
 # return(object)  ; returns the object and exits the function when ran
+  return(None) # Has to be in a function
+
 # pass  ; does nothing, used when the code expects a line
+# if (boolean):  ; checks if the argument is True or False, and if True, does the lines that are indented below it.
+if(True):
+  pass
+# and  ; And gate, requires both sides to be True to return True
+if (1==1) and True:
+  pass
+# or  ; Or gate, requires only one side to be True to return True
+if (2==2) or False:
+  pass
+# elif (boolean):  ; else if, like "if" but will run only when the "if" statement above it is False
+elif True:
+  pass
+# else:  ; runs when all the 'elif' and 'if' statements above it fail
+else: pass
 
-# This sample program returns if argument_one is a integer, string, or a list; as a string
-# Keep in mind that this was written for demonstration and not for efficiency.
-def function_a(argument_one):
-
-  #Check if the argument type is an int and not a string.
-  if (type(argument_one) == int) and (type(argument_one) != str):
-    return('int')
-
-  #If the argument is a string or a list
-  elif (type(argument_one) == str) or (type(argument_one) == list) :
-    print('string or list')
-
-    #Now that we know it's either a string or a list check if it's a string
-    if (type(argument_one) == str):
-      #It's a string
-      return('string')
-    #Otherwise, it's a list, and return that
-    else: return('list')
-
-  #Since there's a pass statement here, the else statement isn't actually required
-  #However it *is* here to show its purpose
-  else:
-    pass
-  # It's neither a integer, string, or a list
-  return('neither')
-
-#Try it out, change the function's argument, then run it
-print(function_a('replace me'))
