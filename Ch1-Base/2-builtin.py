@@ -5,6 +5,7 @@
 # generator : a function that generates an iterable
 
 #Some basic ones are shown here:
+# Try running the file
 
 # input() ; Reads an input from the terminal
 user_input = input("Enter something: ")

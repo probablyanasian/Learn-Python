@@ -13,6 +13,7 @@ var = 'that' #Type: str
 
 #You can also delete them
 del var
+# The variable var doesn't exist here
 
 
 ## They can hold many different types of data

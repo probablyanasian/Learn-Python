@@ -1,31 +1,30 @@
 # Try creating some variables
 # Don't be discouraged if you need to look back
 
-# Initialize, to not cause errors with undefined variables.
-a = b = c = d = e = f = None
-
 #ex. Store the word 'hello' inside of 'world'
+# Replace None, with the right type
 world = 'hello'
 
 # Delete the variable 'world'
 
 
 # Store an integer inside of 'a'
-
+a = None
 
 # Store a string inside of 'b'
-
+b = None
 
 # Store a list inside of 'c'
-
+c = None
 
 # Store a tuple inside of 'd'
-
+d = None
 
 # Store a dict inside of 'e'
-
+e = None
 
 #Store a boolean inside of 'f'
+f = None
 
 
 
