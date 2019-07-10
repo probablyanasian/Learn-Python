@@ -4,6 +4,3 @@
 
 # Use input(), slice(), and print(). optional(list())
 # Check by running 2-check.py
-
-a = input("blah")
-print(a[:5])

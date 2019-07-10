@@ -43,6 +43,7 @@ elif check_type in ['back', 'b']:
   start_num = 20
   end_num = num_of_let
   expected = 'ending_text'
+  
 else:
   print('Error, please report this `2-check.py broke`')
   sys.exit()
@@ -51,7 +52,7 @@ correct = True
 for _ in range(10): 
   p = Popen([sys.executable, '-u', path], stdout=PIPE, stdin=PIPE, encoding='utf-8')
   start_text = text_gen(start_num)
-  ending_text = text_gen(secrets.randbelow(end_num))
+  ending_text = text_gen(end_num)
   input_text = start_text + ending_text
   check = p.communicate(input=input_text)[0].replace(query, '').strip()
   if check == eval(expected):
