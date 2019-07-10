@@ -17,8 +17,8 @@ def function_a(argument_one):
     #Otherwise, it's a list, and return that
     else: return('list')
 
-  #Since there's a pass statement here, the else statement isn't actually required
-  #However it *is* here to show its purpose
+  #Since this else statement isn't doing anything, it isn't actually required
+  #However it *is* here to show usage.
   else:
     pass
   # It's neither a integer, string, or a list
