@@ -5,7 +5,7 @@ A streamlined way of learning Python 3.x by doing.
 1. Install [Python 3.x](https://www.python.org/downloads/). Whichever is the latest version of Python 3.
 1. Install [Git](https://git-scm.com/downloads), if you haven't already.
    - Or download as a zip, however updates will be harder to get.
-1. Install an editor that you'd be comfortable using. Ex. VS Code
+1. Install an editor that you'd be comfortable using. Ex. VS Code, PyCharm
 1. Clone the repository `git clone https://www.github.com/probablyanasian/Learn-Python`
 1. Open up Ch1-Types/1-types.py in your editor and you're ready to start learning!
    - You might want to also read the Introduction

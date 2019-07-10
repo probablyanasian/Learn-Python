@@ -1,12 +1,21 @@
 This guide is a self-learning guide made to allow people to learn Python offline.
-This guide is currently targeted at beginners in Python.
+This guide is currently targeted at beginners with little to no experience in programming or Python.
 I hope to be able to expand it further, making it a resource to help those who are already proficient even stronger.
-I will only go over what is builtin to Python in this guide. This includes some libraries in python's Standard library 
+I will only go over what is "built-in" to Python in this guide. This will include some libraries in Python's standard library.
 
-The style Python is taught here is "learn by doing".
-What that means is, I'll introduce a topic, and then have you do a practice.
-Try not to skip ahead, as you may miss a few key points
+The style Python is taught in this guide is "learn by doing".
+What that means is, I'll introduce a topic, give examples, and then have you do a practice.
+Try to do all the practices, they'll help with thinking skills necessary when creating new programs.
+Also try not to skip ahead, as you may miss a few key points.
 
 The practice will correlate with what I've taught in each lesson.
-The difficulty of each practice may vary for each person.
+Please don't rename files, or move them.
 Each practice will build on top of previous ones.
+In the beginning, practices will have check programs or algorithms, either built in or seperate.
+However, in later practices, you will have to judge on your own, This is to help build your own debugging skills, that are necessary in real life.
+
+
+Disclaimers
+Everything will be as accurate as possible to my knowledge.
+However, that means that if my knowledge is lacking, this guide will be as well.
+If you find anything wrong in this guide, please let me know by opening a bug report.
