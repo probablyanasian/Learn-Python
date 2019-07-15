@@ -30,7 +30,7 @@ var = ['a', 'list', 'of', 'things']  # Type: list
 # A dictionary is like a list, but data is stored in key:value pairs
 var = {'key': 'value'}  # Type: dict
 
-# Tuples are like lists, but they have to have the same amount items inside, after creation
+# Tuples are like lists, but they're immutable, the values it holds can't change after being created
 var = ('a', 'tuple')  # Type: tuple
 
 # Booleans store a True or False

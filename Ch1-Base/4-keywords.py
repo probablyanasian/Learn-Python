@@ -4,15 +4,20 @@
 # Here are some keywords you will need to know for now.
 
 # def funct(arg1, arg2, ...):  ; defines a user defined function (doesn't require an argument)
+
+
 def function():
 
     # return(object)  ; returns the object and exits the function when ran
     return(None)  # Has to be in a function
 
-# pass  ; does nothing, used as a placeholder when the code expects something
+
 # if (boolean):  ; checks if the argument is True or False, and if True, does the lines that are indented below it.
 if(True):
+
+    # pass  ; does nothing, used as a placeholder when the code expects something
     pass
+
 # and  ; And gate, requires both sides to be True to return True
 if (1 == 1) and True:
     pass

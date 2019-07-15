@@ -18,12 +18,19 @@
 # Equal to
 'string' == 'string'  # True
 1 == 1  # True
+['a', 'b'] == ['a', 'b']  # True
 
-# Identity ; Checks whether they are referring to the same object
+# Not equal to
+'this' != 'that'  # True
+1 != 2  # True
+['b', 'a'] != ['a', 'b'] #True
+
+# init for demo below
 a = ['a', 'b', 'c']
 b = ['a', 'b', 'c']
 c = a
 
+# Identity ; Checks whether they are referring to the same object
 a is b  # False
 a is c  # True
 
