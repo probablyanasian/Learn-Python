@@ -12,7 +12,7 @@ The practice will correlate with what I've taught in each lesson.
 Please don't rename files, or move them.
 Each practice will build on top of previous ones.
 In the beginning, practices will have check programs or algorithms, either built in or seperate.
-However, in later practices, you will have to judge on your own, This is to help build your own debugging skills, that are necessary in real life.
+However, in *later* practices, you will have to judge on your own, This is to help build your own debugging skills, that are necessary in real life.
 
 
 Disclaimers

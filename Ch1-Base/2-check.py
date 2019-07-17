@@ -65,7 +65,7 @@ for _ in range(25):
     # put the two together
     input_text = f'{start_text}{ending_text}'
     # Send in the text, get rid of the query text
-    check = p.communicate(input=input_text)[0].replace(query, '')
+    check = p.communicate(input=input_text)[0].replace(query, '', 1)
     # Check if the response was right
     if check == eval(expected):
         # Do nothing
