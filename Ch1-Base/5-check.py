@@ -7,7 +7,7 @@ from secrets import randbits
 
 # Get the path this file is in
 path = os.path.join(os.path.dirname(
-    os.path.realpath(__file__)), '4-practice.py')
+    os.path.realpath(__file__)), '5-practice.py')
 
 # Make dict for query strings
 queries = {}
@@ -34,21 +34,28 @@ for letter in letterList:
     queryNum += 1
 
 correct = True
-for cur_test in range(25):
+for _ in range(25):
     # Open the subprocess
     p = Popen([sys.executable, '-u', path],
               stdout=PIPE, stdin=PIPE, stderr=PIPE, encoding='utf-8')
 
     # Generate my test inputs, randomly
-    inputA = str(randbits(10))
-    inputB = str(randbits(10))
+    inputA = randbits(10)*3 #mult 3 to increase probability of being greater than B
+    inputB = randbits(5)
+    proper_input = False
+    while not proper_input:
+        if inputB == 0 or inputA == 0:
+            #Seperated further for more efficiency in compiler
+            if inputB == 0:
+                inputB = randbits(5)
+            else: inputA = randbits(10)*3
+        elif inputA == inputB:
+            inputA += randbits(3) # add an int 0-8
+        elif inputA < inputB:
+            inputA, inputB = inputB, inputA # Swap, guarantees size
+        else: proper_input = True
 
-    # Since it's hard to generate an equal scenario randomly with 10 bits
-    if (cur_test % 5) == 0:
-        # Force an equal scenario
-        inputA = inputB
-
-    # Send in my test inputs, and get the error as well
+    # Send in my test inputs, and get the error back as well
     test_output, test_error = p.communicate(input=f'{inputA}\n{inputB}')
     # Make sure the subprocess closed before continuing
     p.wait()

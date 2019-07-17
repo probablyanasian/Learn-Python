@@ -7,7 +7,8 @@
 #Some basic ones are shown here:
 # Try running the file
 
-# input() ; Reads an input from the terminal
+# input() ; Reads an input from the terminal 
+# This returns a string, but for the next few practices, don't convert the inputs to a different type.
 user_input = input("Enter something: ")
 
 # print() ; Prints something out onto the terminal.
