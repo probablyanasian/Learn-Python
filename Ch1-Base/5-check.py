@@ -39,33 +39,38 @@ for _ in range(25):
     p = Popen([sys.executable, '-u', path],
               stdout=PIPE, stdin=PIPE, stderr=PIPE, encoding='utf-8')
 
+    ### GENERATE INPUTS ###
+
     # Generate my test inputs, randomly
-    inputA = randbits(10)*3 #mult 3 to increase probability of being greater than B
+    # mult 3 to increase probability of being greater than B
+    inputA = randbits(10)*3
     inputB = randbits(5)
     proper_input = False
     while not proper_input:
         if inputB == 0 or inputA == 0:
-            #Seperated further for more efficiency in compiler
+            # Seperated further for more efficiency in compiler
             if inputB == 0:
                 inputB = randbits(5)
-            else: inputA = randbits(10)*3
+            else:
+                inputA = randbits(10)*3
         elif inputA == inputB:
-            inputA += randbits(3) # add an int 0-8
+            inputA += randbits(3)  # add an int 0-8
         elif inputA < inputB:
-            inputA, inputB = inputB, inputA # Swap, guarantees size
-        else: proper_input = True
+            inputA, inputB = inputB, inputA  # Swap, guarantees size
+        else:
+            proper_input = True
+
+    ### DONE GENERATING ###
 
     # Send in my test inputs, and get the error back as well
     test_output, test_error = p.communicate(input=f'{inputA}\n{inputB}')
     # Make sure the subprocess closed before continuing
     p.wait()
-    # Find the expected output
-    if inputB == inputA:
-        expected = 'equal'
-    elif inputB > inputA:
-        expected = 'greater than'
-    elif inputB < inputA:
-        expected = 'less than'
+
+    ### FIND EXPECTED OUTPUT ####
+    expected = '\n'.join([str(num)
+                          for num in range(inputA+1) if (num) % inputB != 0])
+    ### DONE FINDING EXPECTED OUTPUT ###
 
     # Remove the query strings
     for indexNum in range(len(queries)):
@@ -81,10 +86,15 @@ for _ in range(25):
         break
     else:
         correct = False
+        test_output = (
+            test_output[:25] + (test_output[25:] and '..')).replace('\n', ' ')
+        expected = (expected[:25] + (expected[25:]
+                                     and '..')).replace('\n', ' ')
         # Tell user how it failed
         print(f'Input A: {inputA}    Input B: {inputB}')
-        print(f'Outputted: {test_output}')
-        print(f'Expected: {expected}')
+        print('Truncated to show first 25 characters, also newlines replaced as spaces.')
+        print(f'Outputted: {repr(test_output)}')
+        print(f'Expected:  {repr(expected)}')
         break
 
 if correct:
