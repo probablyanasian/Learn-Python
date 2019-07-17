@@ -21,8 +21,6 @@ A streamlined way of learning Python 3.x by doing.
 - Some programs may not have a checking program inside, you'll have to judge if you did it correctly or not. (It shouldn't be too difficult)
 - This is self-learning, only by being true to yourself will you learn
 
-- There may be some initialization lines at the beginning to prevent errors
-
 - You can help by sharing this, and in doing so, help people learn Python
 
 ##### Discussion server: [Discord](https://discord.gg/BVRhTNE)
