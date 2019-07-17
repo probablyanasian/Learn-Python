@@ -1,5 +1,6 @@
 # Comparators allows the program to compare two values.
 # They return a boolean value, whether it's true or not.
+# Remembering these will do you well in the future.
 
 # There are eight comparison operations:
 
@@ -23,7 +24,7 @@
 # Not equal to
 'this' != 'that'  # True
 1 != 2  # True
-['b', 'a'] != ['a', 'b'] #True
+['b', 'a'] != ['a', 'b']  # True
 
 # init for demo below
 a = ['a', 'b', 'c']

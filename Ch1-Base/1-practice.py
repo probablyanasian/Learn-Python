@@ -1,5 +1,6 @@
 # Try creating some variables
 # Don't be discouraged if you need to look back
+# Run this program to check
 
 # ex. Store the word 'hello' inside of 'world'
 # Replace None with the right value
