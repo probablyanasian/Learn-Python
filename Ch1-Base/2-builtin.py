@@ -25,7 +25,8 @@ len(a_list)  # 6
 # type(object) ; Returns the type of the object
 print(type(a_list))  # <class 'list'>
 
-# sorted(iterable <, key, reverse>)
+# sorted(iterable <, key, reverse>) ; Sorts an iterable
+sorted_list = sorted(a_list) # ['P', 'h', 'n', 'o', 't', 'y']
 
 # range(start, stop) ; Creates a generator with the numbers from start to (stop-1)
 a_range = range(0, 5)
