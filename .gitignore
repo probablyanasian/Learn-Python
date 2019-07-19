@@ -112,4 +112,4 @@ venv.bak/
 
 # personal testing file
 *tester.py
-/blank-check.py
+/blank-check

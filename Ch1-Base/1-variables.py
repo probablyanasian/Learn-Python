@@ -12,7 +12,7 @@ var = 'this'  # Type: str
 var = 'that'  # Type: str
 
 # You can also delete them
-del var
+del(var)
 # The variable var doesn't exist here
 
 
