@@ -10,14 +10,3 @@
 # l: ***
 # o: **
 # r: *
-alpha = input("Blehhh: ")
-
-
-# for i in alpha:
-valid = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-a = {}
-for i in alpha:
-    a[i] = alpha.count(i)
-for k in sorted(a):
-    if k.lower() in valid:
-        print (f'{k}: '+'*'*a[k])
