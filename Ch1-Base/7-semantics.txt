@@ -1,0 +1,35 @@
+This will deal with Python semantics, the meaning of some terms in Python.
+This is just some descriptions/definitions, NOT a dictionary.
+
+Keywords 
+    Keywords are reserved words that serve a predefined purpose.
+
+Built-in
+    Built ins are functions that are in the module builtins.
+    These functions can be accessed directly.
+
+Scopes
+    Scopes are seperated by indents between function definitions.
+    They dictate which variables/functions can be accessed at a certain location.
+    They are commonly represented as circles or squares, one encapsulating, surrounding, the other.
+
+    Built-in Scope
+        This scope only includes all builtins and can be accessed in any Python file.
+    Global Scope
+        This is the scope that is available everywhere in the same file.
+    Enclosed Scope
+        When two functions are nested, defined in another, the inner function is within the enclosed scope of the outer.
+        This means that the inner function has access to variables in it's encapsulating function.
+    Local Scope
+        This is the innermost scope, it contains all variables and functions defined above it, in terms of scope.
+
+Class
+    A class is an object.
+    It allows you to create multiple instances an object.
+
+Inheritance
+    A class can inherit functions of a different class when created.
+    This is when a class does so.
+
+Exceptions
+    Errors that are raised when running erroneous Python code.

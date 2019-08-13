@@ -82,7 +82,7 @@ for loopNum in range(25):
             queries[letterList[indexNum]], '', 1).strip()
 
     # Check the result
-    if test_output in expected:
+    if test_output == expected:
         pass
     # If there was an error raised
     elif test_error != '':
