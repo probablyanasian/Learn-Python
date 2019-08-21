@@ -27,12 +27,15 @@ e = None
 # Store a boolean inside of 'f'
 f = None
 
+# Store a set inside of 'g'
+g = None
+
 
 # Check algorithm
 check = True
-vars = [a, b, c, d, e, f]
-var_name = ['a', 'b', 'c', 'd', 'e', 'f']
-types = [int, str, list, tuple, dict, bool]
+variables = [a, b, c, d, e, f, g]
+var_name = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+types = [int, str, list, tuple, dict, bool, set]
 
 # Check if the variable world still exists
 if 'world' in globals():
@@ -41,7 +44,7 @@ if 'world' in globals():
 
 # Go through the variables, and check if they are the right type
 for num in range(0, 6):
-    if type(vars[num]) == types[num]:
+    if type(variables[num]) == types[num]:
         pass
     else:
         print('{0} is not a {1}'.format(var_name[num], types[num]))

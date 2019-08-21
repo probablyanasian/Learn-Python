@@ -30,6 +30,9 @@ var = ['a', 'list', 'of', 'things']  # Type: list
 # A dictionary is like a list, but data is stored in key:value pairs
 var = {'key': 'value'}  # Type: dict
 
+# A set is also like a list, however it doesn't store order.
+var = {'a', 'b', 'c', 'set'}
+
 # Tuples are like lists, but they're immutable, the values it holds can't change after being created
 var = ('a', 'tuple')  # Type: tuple
 
