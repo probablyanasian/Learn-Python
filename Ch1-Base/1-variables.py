@@ -23,18 +23,19 @@ var = 1  # Type: int
 
 # Strings are letters, words, or symbols
 var = "string"  # Type: str
+var = 'string'  # Type: str
 
 # Lists can contain a 'list' of things, seperated by commas
 var = ['a', 'list', 'of', 'things']  # Type: list
 
 # A dictionary is like a list, but data is stored in key:value pairs
-var = {'key': 'value'}  # Type: dict
+var = {'key1': 'value1', 'key2':'value2'}  # Type: dict
 
 # A set is also like a list, however it doesn't store order.
-var = {'a', 'b', 'c', 'set'}
+var = {'a', 'b', 'c', 'd'} # Type: set
 
 # Tuples are like lists, but they're immutable, the values it holds can't change after being created
 var = ('a', 'tuple')  # Type: tuple
 
-# Booleans store a True or False
+# Booleans store either True or False
 var = True  # Type: boolean
