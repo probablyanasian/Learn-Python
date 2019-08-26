@@ -71,6 +71,7 @@ for cur_test in range(25):
     # If there was an error raised
     elif test_error != '':
         print(f'Your program outputted the following error:\n{test_error}')
+        correct = False
         break
     else:
         correct = False
