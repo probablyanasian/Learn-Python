@@ -32,7 +32,7 @@ for loopNum in range(1):
     ### DONE GENERATING ###
 
     # Open the subprocess
-    p = subprocess.run([sys.executable, '-u', path], encoding='utf-8')
+    p = subprocess.run([sys.executable, '-u', path], encoding='utf-8', stderr=subprocess.PIPE, stdout=subprocess.PIPE)
 
     # Send in my test inputs, and get the error back as well
     test_error = p.stderr
@@ -47,8 +47,9 @@ for loopNum in range(1):
     if test_output == expected:
         pass
     # If there was an error raised
-    elif test_error != '' or None:
+    elif test_error != '' or test_error != None:
         print(f'Your program outputted the following error:\n{test_error}')
+        correct = False
         break
     else:
         correct = False

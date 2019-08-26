@@ -10,4 +10,5 @@
 
 # It should only output:
 # woah
-
+print('potat')
+raise(IndexError)
