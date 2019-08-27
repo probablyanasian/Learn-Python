@@ -67,7 +67,7 @@ for _ in range(25):
     # Send in the text, get rid of the query text
     check = p.communicate(input=input_text)[0].replace(query, '', 1)
     # Check if the response was right
-    if check == eval(expected):
+    if check in [eval(expected), eval(expected)+'\n']:
         # Do nothing
         pass
     else:
